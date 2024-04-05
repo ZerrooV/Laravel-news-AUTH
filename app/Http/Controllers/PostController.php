@@ -15,7 +15,7 @@ class PostController extends Controller
     public function baca()
     {
         $posts = Post::all();
-        view('admin.baca', compact('posts'));
+        return view('admin.baca', compact('posts'));
     }
 
     public function create()
